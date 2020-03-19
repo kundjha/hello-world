@@ -1,0 +1,45 @@
+public class CheckingAccount
+
+{
+	public double balance;
+	private int number;
+	public CheckingAccount(int number1)
+	{
+		number = number1;
+	}
+
+
+
+public void deposit(double amount)
+{
+
+balance = balance + amount ;
+System.out.println("In Deposit method : " +balance);
+
+
+}
+
+public void withdraw(double amount) throws InsufficientFundsException
+{
+
+if ( amount <= balance)
+{
+
+balance=balance-amount;
+System.out.println("In withdraw method if block :" +balance);
+
+}
+
+else 
+{
+
+System.out.println("In withdraw method else block : " +balance);
+double needs = amount-balance;
+throw new InsufficientFundsException(needs);
+
+}
+
+
+}
+
+}

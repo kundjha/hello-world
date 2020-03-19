@@ -1,0 +1,6 @@
+
+class OTPException extends Exception
+
+{
+
+}

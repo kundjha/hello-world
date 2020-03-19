@@ -1,0 +1,45 @@
+class Calculatormul
+{
+void multiply()
+{
+int i=10;
+int j=20;
+int k=i*j;
+System.out.println("Sum in multiplication method is : " +k);
+}
+
+void multiply1(int x, int y)
+{
+
+int z =x*y;
+System.out.println("Multiplication in multiply1 method is:" +z);
+}
+
+int multiply2(int a,int b)
+{
+
+int c =a*b;
+System.out.println("Multiplication in multiply1 is :"+c);
+return c;
+}
+
+String display()
+{
+
+String name="Selenium";
+String name1 ="java";
+String name2 = name + " " + name1;
+System.out.println(name2);
+
+return name2;
+}
+
+String display1()
+{
+
+char name = 'S';
+char name1= 'J';
+String name2 = name + " " + name1;
+System.out.println(name2);
+return name2;
+}
